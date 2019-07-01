@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"fmt"
 )
 
 func main() {
@@ -48,6 +49,7 @@ func pgbouncerUrls() map[string]string {
 			log.Printf("fn=pgbouncerUrls at=url key=%s", kv[0])
 		}
 	}
+	fmt.Println("pgbouncerUrl", urls)
 	return urls
 }
 
@@ -59,7 +61,7 @@ func bouncebackUrls() []string {
 		log.Println("fn=main at=no-bounceback-urls")
 		return []string{}
 	}
-
+	fmt.Println("bouncebackUrl", urlz)
 	return strings.Split(urlz, ",")
 }
 
