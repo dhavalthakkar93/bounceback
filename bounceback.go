@@ -76,6 +76,7 @@ func notify() {
 	for _, url := range bouncebackUrls() {
 		req, err := http.NewRequest("POST", url, bytes.NewReader(j))
 		req.Header.Set("Content-Type", "application/json")
+		fmt.Println("pgbouncerUrlLoop", url)
 		if err != nil {
 			log.Printf("func=notify at=req-err error=%q", err)
 			continue
