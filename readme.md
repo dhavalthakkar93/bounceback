@@ -4,7 +4,7 @@ bounceback
 connect to private spaces heroku postgres databases from peered vpcs
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/heroku/bounceback)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dhavalthakkar93/bounceback)
 
 
 Deploying this app will create a single `bounceback` dyno in your space that exposes a pgbouncer/stunnel server on your dyno private network.
